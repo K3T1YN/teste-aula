@@ -1,0 +1,30 @@
+.container {
+    border: 1px solid blue;
+    width: 1000px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px 80% 20% / 1fr 2fr;
+    grid-template-columns: repeat( 4, 1fr) / repleat(6, 1fr);
+    gap: 5px;
+}
+    
+.item  {
+    border: 1px solid red;
+    background-color: pink;
+    
+}
+
+.item a {
+    grid-row-start: 1 ;
+    grid-row: 3;
+    background-color: aqua;
+}
+
+.item b {
+    grid-column-start: 1 ;
+    grid-column-end: 7;
+    background-color: black;
+
+}
+
